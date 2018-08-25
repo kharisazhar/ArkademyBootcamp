@@ -1,0 +1,4 @@
+
+ SELECT `posts`.`id_posts`, `posts`.`title`, `posts`.`content`, `posts`.`createdBy`, `users`.`id_user`, `users`.`username` FROM `posts` LEFT JOIN `users` ON `posts`.`createdBy`=`users`.`id_user`
+
+ SELECT * FROM `comments` WHERE `postId`='".$_GET['id_post']."' 
